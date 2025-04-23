@@ -28,5 +28,6 @@
     "express": "^5.1.0",
     "mongodb": "^6.16.0",
     "opentelemetry-instrumentation-express": "^0.41.0"
-  }
+  },
+  "devDependencies": {}
 }

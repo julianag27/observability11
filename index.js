@@ -25,11 +25,13 @@ app.listen(port, () => {
 console.log(`Example app listening on port ${port}`);
 });
 };
+
 startServer();
+
 app.get("/todo", async (req, res) => {
-const todos = await db.collection("todos").find({}).toArray()
-res.send(todos)
-});
+    const todos = await db.collection("todos").find({}).toArray()
+    res.send(todos)
+    });
 
 app.get("/todo/:id"
     , async (req, res) => {
